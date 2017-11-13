@@ -11,6 +11,8 @@ namespace L001_StringBuilder_Klasse
     {
         static void Main(string[] args)
         {
+            // Strings sind unveränderlich und jede Stringmanipulation sorgt dafür, dass ein neues 
+            // String Objekt erschaffen wird. Bei vielen Operationen kostet dies viel Zeit: 
             var watch = new Stopwatch();
             string text = "";
             watch.Start();
@@ -21,7 +23,6 @@ namespace L001_StringBuilder_Klasse
             }
 
             watch.Stop();
-
             Console.WriteLine($"Zeit: {watch.ElapsedMilliseconds} ms");
         }
     }
